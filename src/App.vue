@@ -5,8 +5,21 @@
       <router-link to="/about">About</router-link>
     </div>
     <router-view />
+    <posts-list></posts-list>
   </div>
 </template>
+
+<script>
+import PostsList from './components/PostsList'
+
+export default ({
+  name : 'App',
+  components : {
+    PostsList
+  }
+})
+</script>
+
 
 <style lang="scss">
 #app {
